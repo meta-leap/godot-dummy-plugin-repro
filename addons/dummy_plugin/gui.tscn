@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://do4uhpwyf23ts"]
+
+[ext_resource type="Script" path="res://addons/dummy_plugin/gui.gd" id="1_yn2ly"]
+
+[node name="DatGui" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yn2ly")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+text = "Click Me"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
